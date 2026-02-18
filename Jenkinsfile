@@ -25,6 +25,7 @@ pipeline {
         stage('Terraform Apply') {
             steps {
                 // Removed the manual approval input
+
                 sh 'terraform apply -auto-approve tfplan'
             }
         }
